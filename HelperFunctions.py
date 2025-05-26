@@ -69,7 +69,7 @@ def foo_to_unkNown(x):
   """
   Turn 'foo' tags into 'UNKNOWN'.
   """
-  if x != str:
+  if type(x) != str:
     return x
   if x == 'foo':
     return 'UNKNOWN'
